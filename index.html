@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./time-tracking-dashboard-main/images/favicon-32x32.png">
+</head>
+<body>
+    <main>
+        <div id="aside">
+            <div id="per-info">
+                <img src="./time-tracking-dashboard-main/images/image-jeremy.png" alt="" srcset="">
+                <div id="per">
+                    <p>Report for</p>
+                    <h1>Jeremy Robson</h1>
+                </div>
+            </div>
+            <ul>
+                <li id="daily">Daily</li>
+                <li id="weekly">Weekly</li>
+                <li id="monthly">Monthly</li>
+            </ul>
+        </div>
+        <div class="board" id="work">
+            <div class="board-img">
+                <img src="./time-tracking-dashboard-main/images/icon-work.svg" alt="" srcset="">
+            </div>
+            <div class="tasks">
+                <div class="flex">
+                    <p class="task-type">Work</p>
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="time">
+                    <h1 id="work-prev">32hrs</h1>
+                    <p class="prev-time" id="work-curr">Last Week - 36hrs</p>
+                </div>
+            </div>
+        </div>
+        <div class="board" id="play">
+            <div class="board-img">
+                <img src="./time-tracking-dashboard-main/images/icon-play.svg" alt="" srcset="">
+            </div>
+            <div class="tasks">
+                <div class="flex">
+                    <p class="task-type">Play</p>
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="time">
+                    <h1 id="play-prev">10hrs</h1>
+                    <p class="prev-time" id="play-curr">Last Week - 8hrs</p>
+                </div>
+            </div>
+        </div>
+        <div class="board" id="study">
+            <div class="board-img">
+                <img src="./time-tracking-dashboard-main/images/icon-study.svg" alt="" srcset="">
+            </div>
+            <div class="tasks">
+                <div class="flex">
+                    <p class="task-type">Study</p>
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="time">
+                    <h1 id="study-prev">4hrs</h1>
+                    <p class="prev-time" id="study-curr">Last Week - 7hrs</p>
+                </div>
+            </div>
+        </div>
+        <div class="board" id="exercise">
+            <div class="board-img" id="exer">
+                <img src="./time-tracking-dashboard-main/images/icon-exercise.svg" alt="" srcset="">
+            </div>
+            <div class="tasks">
+                <div class="flex">
+                    <p class="task-type">Exercise</p>
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="time">
+                    <h1 id="exercise-prev">4hrs</h1>
+                    <p class="prev-time" id="exercise-curr">Last Week - 5hrs</p>
+                </div>
+            </div>
+        </div>
+        <div class="board" id="social">
+            <div class="board-img" id="soc">
+                <img src="./time-tracking-dashboard-main/images/icon-social.svg" alt="" srcset="">
+            </div>
+            <div class="tasks">
+                <div class="flex">
+                    <p class="task-type">Social</p>
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="time">
+                    <h1 id="social-prev">5hrs</h1>
+                    <p class="prev-time" id="social-curr">Last Week - 10hrs</p>
+                </div>
+            </div>
+        </div>
+        <div class="board" id="self-care">
+            <div class="board-img" id="care">
+                <img src="./time-tracking-dashboard-main/images/icon-self-care.svg" alt="" srcset="">
+            </div>
+            <div class="tasks">
+                <div class="flex">
+                    <p class="task-type">Self Care</p>
+                    <div class="dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="time">
+                    <h1 id="care-prev">2hrs</h1>
+                    <p class="prev-time" id="care-curr">Last Week - 2hrs</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

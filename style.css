@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+
+main {
+    margin: 150px 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+#aside {
+    grid-row: span 2;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+    height: 450px;
+}
+
+#per-info {
+    background-color: hsl(246, 80%, 60%);
+    width: 100%;
+    padding: 30px 25px;
+    border-radius: 15px;
+    height: 300px;
+}
+
+#per-info img {
+    width: 60px;
+    margin-bottom: 25px;
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+#per-info p {
+    font-size: 14px;
+    color: hsl(236, 100%, 87%);
+}
+
+#per-info h1 {
+    font-size: 35px;
+    font-weight: 300;
+    color: hsl(0, 0%, 100%);
+}
+
+#aside ul {
+    padding: 25px;
+}
+
+#aside ul li { 
+    padding-bottom: 20px;
+    list-style: none;
+    color: hsl(235, 45%, 61%);
+    cursor: pointer;
+}
+
+#aside ul li:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+
+.board {
+    height: 210px;
+    border-radius: 15px;
+}
+
+#work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+#play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+#study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+#exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+#social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+#self-care {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.tasks {
+    background-color: hsl(235, 46%, 20%);
+    height: 180px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.board-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.board-img img {
+    width: 40px;
+}
+
+#exer img {
+    width: 50px;
+}
+
+#soc img {
+    width: 25px;
+}
+
+#care img{
+    width: 32px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.task-type {
+    color: hsl(0, 0%, 100%);
+}
+
+.dots { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dot {
+    height: 3px;
+    width: 3px;
+    background-color: hsl(236, 100%, 87%);
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.tasks h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.prev-time {
+    color: hsl(236, 100%, 87%);
+}
+
+
+@media(max-width:768px) {
+    main {
+        margin: 90px 30px;
+        display: block;
+    }
+
+    #aside {
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    #per-info {
+        padding: 30px 15px 30px 30px;
+        height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #per-info img {
+        width: 70px;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    #per-info p {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    #per-info h1 {
+        font-size: 25px;
+    }
+
+    #aside ul {
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #aside ul li {
+        padding-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .board {
+        margin-bottom: 35px;
+        height: 150px;
+    }
+
+    .tasks {
+        height: 120px;
+    }
+
+    .flex {
+        margin-bottom: 10px;
+    }
+
+    .task-type {
+        font-size: 18px;
+    }
+
+    .dot {
+        height: 6px;
+        width: 6px;
+        margin-right: 3px;
+    }
+
+    .time {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .tasks h1 {
+        margin-bottom: 0;
+    }
+}
+
